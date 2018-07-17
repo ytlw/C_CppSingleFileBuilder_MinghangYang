@@ -1,0 +1,9 @@
+Note:
+    In Windows: make sure you have installed G++/GCC (MinGW), and set
+    the environment variable "PATH" correctly.
+
+    In Linux, make sure you have installed gnome-terminal and g++.
+
+Usage:
+    In Windows and Linux, Ctrl + Shift + B
+    In Mac OS X, Command + Shift + B

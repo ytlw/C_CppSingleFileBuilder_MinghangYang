@@ -1,6 +1,6 @@
 Note:
     In Windows, make sure you have installed G++/GCC (MinGW), and set
-    the environment variable "PATH" correctly.
+    the environment variable "PATH" correctly.It is recommended to install CodeBlocks.
     For example, if you installed MinGW in "C:\Program Files (x86)\CodeBlocks\MinGW",
     then you should add "C:\Program Files (x86)\CodeBlocks\MinGW\bin" to your "PATH".
     You may also need restart Sublime Text.
@@ -17,6 +17,7 @@ Usage:
 
 注释：
     在 Windows 环境下，确保已经安装了 G++/GCC (MinGW)，并且配置了正确的环境变量。
+    建议安装CodeBlocks。
     比如，你把 MinGW 安装在 "C:\Program Files (x86)\CodeBlocks\MinGW"，
     那么，你可以在 "PATH" 中添加 "C:\Program Files (x86)\CodeBlocks\MinGW\bin"。
     你可能还需要重启Sublime。

@@ -18,7 +18,7 @@
             "cmd": ["gnome-terminal -e 'bash -c \"\\\"./${file_base_name}\\\";echo;read line;exit; exec bash\"'"]
         },
         "osx": {
-            "shell_cmd": "echo '\"${file_path}/${file_base_name}\"' > '/tmp/${file_base_name}' && echo read >> '/tmp/${file_base_name}' && chmod +x '/tmp/${file_base_name}' && open -a Terminal.app '/tmp/${file_base_name}'"
+            "shell_cmd": "echo 'cd \"${file_path}/\"' > '/tmp/${file_base_name}' && echo './\"${file_base_name}\"' >> '/tmp/${file_base_name}' && echo read >> '/tmp/${file_base_name}' && chmod +x '/tmp/${file_base_name}' && open -a Terminal.app '/tmp/${file_base_name}'"
         },
         "windows": {
             "shell_cmd" : "start cmd /c \"\"${file_base_name}.exe\" & echo. & pause\""
@@ -34,7 +34,7 @@
             "shell_cmd": "g++ -std=c++14 \"${file}\" -o \"${file_base_name}.exe\" && start cmd /c \"\"${file_base_name}.exe\" & echo. & pause\""
         },
         "osx": {
-            "shell_cmd": "clang++ -std=c++14 '${file}' -o '${file_base_name}' && echo '\"${file_path}/${file_base_name}\"' > '/tmp/${file_base_name}' && echo read >> '/tmp/${file_base_name}' && chmod +x '/tmp/${file_base_name}' && open -a Terminal.app '/tmp/${file_base_name}'"
+            "shell_cmd": "clang++ -std=c++14 '${file}' -o '${file_base_name}' && echo 'cd \"${file_path}/\"' > '/tmp/${file_base_name}' && echo './\"${file_base_name}\"' >> '/tmp/${file_base_name}' && echo read >> '/tmp/${file_base_name}' && chmod +x '/tmp/${file_base_name}' && open -a Terminal.app '/tmp/${file_base_name}'"
         },
     }
     ]

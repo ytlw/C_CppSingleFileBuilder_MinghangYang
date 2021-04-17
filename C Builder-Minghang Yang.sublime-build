@@ -15,7 +15,7 @@
         "name": "Run",
         "shell": true,
         "linux": {
-            "cmd": ["gnome-terminal -e 'bash -c \"\\\"./${file_base_name}\\\";echo;read line;exit; exec bash\"'"]
+            "cmd": ["gnome-terminal -- bash -c \"\\\"./${file_base_name}\\\";echo;read line;exit; exec bash\""]
         },
         "osx": {
             "shell_cmd": "echo 'cd \"${file_path}/\"' > '/tmp/${file_base_name}' && echo './\"${file_base_name}\"' >> '/tmp/${file_base_name}' && echo read >> '/tmp/${file_base_name}' && chmod +x '/tmp/${file_base_name}' && open -a Terminal.app '/tmp/${file_base_name}'"
@@ -28,7 +28,7 @@
         "name": "Build and Run",
         "shell": true,
         "linux": {
-            "cmd": ["gcc -std=c11 \"${file}\" -o \"${file_base_name}\" && gnome-terminal -e 'bash -c \"\\\"./${file_base_name}\\\";echo;read line;exit; exec bash\"'"]
+            "cmd": ["gcc -std=c11 \"${file}\" -o \"${file_base_name}\" && gnome-terminal -- bash -c \"\\\"./${file_base_name}\\\";echo;read line;exit; exec bash\""]
         },
         "windows": {
             "shell_cmd": "gcc -std=c11 \"${file}\" -o \"${file_base_name}.exe\" && start cmd /c \"\"${file_base_name}.exe\" & echo. & pause\""

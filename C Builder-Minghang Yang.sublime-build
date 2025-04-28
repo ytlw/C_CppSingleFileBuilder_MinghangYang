@@ -36,7 +36,13 @@
         "osx": {
             "shell_cmd": "clang -std=c11 '${file}' -o '${file_base_name}' && echo 'cd \"${file_path}/\"' > '/tmp/${file_base_name}' && echo './\"${file_base_name}\"' >> '/tmp/${file_base_name}' && echo read >> '/tmp/${file_base_name}' && chmod +x '/tmp/${file_base_name}' && open -a Terminal.app '/tmp/${file_base_name}'"
         },
-
+    },
+    {
+        "name": "Run with input file",
+        "shell": true,
+        "windows": {
+            "shell_cmd" : "start cmd /c \"\"${file_base_name}.exe\" < \"${file_base_name}.in\" & echo. & pause\""
+        }
     }
     ]
 }

@@ -15,6 +15,22 @@ Usage:
     You can see your program run in terminal.
     Next time you just press Ctrl + B (Windows and Linux) or Command + B (Mac OS X).
 
+    Windows only: take input from a file.
+    1) Ctrl + Shift + B, choose C Builder-Minghang Yang
+    2) Ctrl + Shift + B, choose Run with input file. say your source file is a.c, then the input is from a.in, not from the terminal.
+
+Modify the script:
+    For example in windows:
+    1) ctrl + shift + p
+        package control: install package
+            OverrideAudit
+
+    2) ctrl + shift + p
+        OverrideAudit: Open Resource 
+            C++ & C Single File Builder - Minghang Yang
+                C Builder-Minghang Yang.sublime-build
+             or C++ Builder-Minghang Yang.sublime-build
+
 注释：
     在 Windows 环境下，确保已经安装了 G++/GCC (MinGW)，并且配置了正确的环境变量。
     建议安装CodeBlocks (13.12或以后版本)。
@@ -30,3 +46,7 @@ Usage:
     第一次使用，按 Ctrl + Shift + B (Windows 和 Linux) 或者 Command + B (Mac OS X)，
     然后选择 `Build and Run'。你可以看到程序在终端中运行。
     下一次再使用，只需按 Ctrl + B (Window 和 Linux) 或者 Command + B (Mac OS X)。
+
+    Windows 下
+    1) Ctrl + Shift + B, 选择 C Builder-Minghang Yang
+    2) Ctrl + Shift + B, 选择 Run with input file. 假设源文件是 a.c, 然后输入将从 a.in 而不是终端。
